@@ -41,3 +41,13 @@ No terminal do VS Code (ou terminal do sistema operacional), dentro do diretóri
 ```sh
 php -S 127.0.0.1:8000
 ```
+
+### 3. Acessar aplicação
+Abra o navegador e vá para http://127.0.0.1:8000
+
+Você verá a tela de login.
+
+### 3. Realizar o login
+1 - Digite um e-mail válido no campo de e-mail.
+
+2 - Insira uma senha válida (deve ter pelo menos 8 caracteres, contendo letra maiúscula e minúscula, caracteres especiais e números, exemplo: Exemplo1!) e clique em "Entrar".
