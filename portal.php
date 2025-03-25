@@ -1,10 +1,16 @@
 <?php
-if (isset($_POST['email'])) {
-    $email = htmlspecialchars($_POST['email']);
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $_SESSION['email'] = $_POST['email'];
 } else {
-    header('Location: login.php');
-    exit();
+    if (!isset($_SESSION['email'])) {
+        header('Location: index.php');
+        exit();
+    }
 }
+
+$email = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
@@ -19,16 +25,20 @@ if (isset($_POST['email'])) {
 <body class="p-0 m-0" style="background-color: #295d2e;">
     <nav class="navbar fixed-top navbar-expand-lg p-1 shadow-lg" style="background-color: #e8a449;">
         <div class="container-fluid d-flex flex-column flex-lg-row align-items-center">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="portal.php">
                 <img src="img\logo_sem_texto.png" alt="Logo" style="height: 50px;">
             </a>
             <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-5">
-                <a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 1</a>
-                <a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 2</a>
-                <a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 3</a>
-                <a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 4</a>
+                <a href="portal.php" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Página Inicial</a>
+                <a href="noticia1.php" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 1</a>
+                <a href="noticia2.php" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 2</a>
+                <a href="noticia3.php" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 3</a>
+                <a href="noticia4.php" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold">Notícia 4</a>
             </div>
             <span class="d-flex gap-1 mt-3">Bem-vindo, <p class="fw-bold"> <?php echo $email; ?> </p>!</span>
+            <form action="logout.php" method="POST" class="ms-3">
+                <button type="submit" class="btn btn-danger">Sair</button>
+            </form>
         </div>
     </nav>
 
