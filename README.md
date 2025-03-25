@@ -1,27 +1,43 @@
-# Teste para candidatos à vaga de desenvolvedor Front-end
+## Victor Silva Guedes
 
-### Instruções
-1. Crie uma tela de login com um validador de e-mail e senha. A senha deve ter pelo menos 8 caracteres, contendo letra maiúscula e minúscula, caracteres especiais e números.
-2. Em seguida, você precisa criar uma tela principal, no estilo de portal de notícia. Essa tela deve incluir um menu horizontal e um rodapé. Além disso, deve conter pelo menos uma imagem e um vídeo. A tela também deve informar o e-mail que foi inserido na tela de login.
-3. É importante que você desenvolva essa tela de forma responsiva, usando HTML5 e CSS3. Se quiser, pode usar pré-processadores como Less, Stylus ou SASS.
-4. A qualidade do seu código será avaliada, mesmo que ele não esteja completo. O mais importante é que o código seja semanticamente correto e bem estruturado.
+- sguedes.victor@gmail.com
+- https://www.linkedin.com/in/victorsilvaguedes/
 
-### O que esperamos:
-1. HTML5
-2. CSS3
-3. PHP
-4. Um passo a passo de como rodar sua aplicação.
+# Solução teste front-end Scot Consultoria
 
-### Diferencial
-1. Responsividade
-2. Bootstrap
+# Portal de Notícias - Projeto PHP
 
-### Atenção
+Este projeto é um portal de notícias simples feito em PHP, com autenticação de login, gerenciamento de sessão e funcionalidade para "Sair" (logout).
 
-* É permitido usar qualquer editor de código e consultar a internet.
+## Passo a Passo para Rodar a Aplicação
 
-Ao terminar o teste, solicite um pull request. 
+Este guia descreve o passo a passo para rodar a aplicação localmente usando PHP embutido.
 
-Em caso de dúvidas, envie e-mail para at@scotconsultoria.com.br
+### Pré-requisitos
 
-**Boa sorte!**
+Antes de começar, você precisa ter os seguintes softwares instalados:
+
+1. **PHP**: [Baixar PHP](https://www.php.net/downloads.php)
+2. **Navegador de internet** (Chrome, Firefox, etc.)
+3. **VS Code**: [Download VS Code](https://code.visualstudio.com/)
+
+## Passo a Passo
+
+### 1. Clonar o Projeto
+
+Caso ainda não tenha o código no seu computador, crie um diretório e abra o VS Code nessa pasta.
+
+```sh
+mkdir meu_projeto
+cd meu_projeto
+code .
+```
+
+Se o código já estiver disponível, copie os arquivos para a pasta do projeto.
+
+### 2. Iniciar servidor PHP
+No terminal do VS Code (ou terminal do sistema operacional), dentro do diretório do seu projeto, execute o comando para iniciar o servidor PHP embutido:
+
+```sh
+php -S 127.0.0.1:8000
+```
