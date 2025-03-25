@@ -19,7 +19,7 @@
 
 	<body>
 		<img
-			src="https://play-lh.googleusercontent.com/TyYm11EALI4ISW8ApPqFBLUB_Po9k4PngnFXqm5u6dOxz6aITKNAos-v_7yCZf21Eyo=w480-h960-rw"
+			src="img\logo.png"
 			alt="logo scot"
 			width="400"
 			height="400"
