@@ -5,11 +5,8 @@
 
 # Solução teste front-end Scot Consultoria
 
-# Portal de Notícias - Projeto PHP
-
-Este projeto é um portal de notícias simples feito em PHP, com autenticação de login, gerenciamento de sessão e funcionalidade para "Sair" (logout).
-
 ## Passo a Passo para Rodar a Aplicação
+Este projeto é um portal de notícias simples feito em PHP, com autenticação de login, gerenciamento de sessão e funcionalidade para "Sair" (logout).
 
 Este guia descreve o passo a passo para rodar a aplicação localmente usando PHP embutido.
 
