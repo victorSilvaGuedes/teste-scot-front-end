@@ -17,13 +17,6 @@ body {
 	border-radius: 8px;
 }
 
-.toast-login {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	margin: 20px;
-}
-
 input.form-control {
 	background-color: transparent;
 	border: none;

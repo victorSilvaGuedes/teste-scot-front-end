@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="Digite seu e-mail" />
+                <input type="text" class="form-control" id="email" name="email" required placeholder="Digite seu e-mail" />
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Senha</label>
