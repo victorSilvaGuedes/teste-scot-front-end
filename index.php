@@ -7,11 +7,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"] ?? "";
     $password = $_POST["password"] ?? "";
 
-		#regex para validar email
+	#regex para validar email
     $email_regex = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 
-		#regex para validar a senha (pelo menos 8 caracteres, letra maiúscula, minúscula, número e caractere especial)
-		$senha_regex = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+	#regex para validar a senha (pelo menos 8 caracteres, letra maiúscula, minúscula, número e caractere especial)
+	$senha_regex = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
 
     if (!preg_match($email_regex, $email)) {
         $erro = "Formato de e-mail inválido.";
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tela de Login</title>
+    <title>Login | Scot Consultoria</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/login.css" />
 </head>
@@ -49,10 +49,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required />
             </div>
             <?php if ($erro): ?>
-                <div class="alert alert-danger"><?= $erro ?></div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?= $erro ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
             <?php endif; ?>
-            <button type="submit" class="btn w-100 btn-login">Entrar</button>
+            <button type="submit" class="btn w-100 btn-primary">Entrar</button>
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
