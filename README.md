@@ -54,5 +54,6 @@ Você verá a tela de login.
 2 - Insira uma senha válida (deve ter pelo menos 8 caracteres, contendo letra maiúscula e minúscula, caracteres especiais e números, exemplo: Exemplo1!) e clique em "Entrar".
 
 ### Vídeo demonstrativo
+Ao clicar no link, o vídeo será baixado.
 
 [🎥 Assista ao vídeo](https://github.com/victorSilvaGuedes/teste-scot-front-end/raw/main/demo-teste-frontend-scot.mp4)
