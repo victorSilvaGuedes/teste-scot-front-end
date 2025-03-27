@@ -7,18 +7,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"] ?? "";
     $password = $_POST["password"] ?? "";
 
-    // Regex para validar o formato do e-mail
+		#regex para validar email
     $email_regex = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 
-    // Regex para validar a senha (pelo menos 8 caracteres, letra maiúscula, minúscula, número e caractere especial)
-    $senha_regex = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+		#regex para validar a senha (pelo menos 8 caracteres, letra maiúscula, minúscula, número e caractere especial)
+		$senha_regex = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
 
     if (!preg_match($email_regex, $email)) {
         $erro = "Formato de e-mail inválido.";
     } elseif (!preg_match($senha_regex, $password)) {
         $erro = "A senha deve ter pelo menos 8 caracteres, incluindo letra maiúscula, minúscula, número e caractere especial.";
     } else {
-        // Se o e-mail e a senha forem válidos, armazena o e-mail na sessão e redireciona
         $_SESSION['email'] = $email;
         header("Location: portal.php");
         exit();
