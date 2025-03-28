@@ -5,7 +5,7 @@
 
 # Solução teste front-end Scot Consultoria
 
-## Passo a Passo para Rodar a Aplicação
+## Passo a passo para Rodar a Aplicação
 
 Este projeto é um portal de notícias simples feito em PHP, com autenticação de login, gerenciamento de sessão e funcionalidade para "Sair" (logout).
 
@@ -47,9 +47,7 @@ php -S 127.0.0.1:8000
 
 ### 3. Acessar aplicação
 
-Abra o navegador e vá para http://127.0.0.1:8000
-
-Você verá a tela de login.
+Abra o navegador e vá para: http://127.0.0.1:8000
 
 ---
 
