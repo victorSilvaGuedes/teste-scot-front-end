@@ -62,5 +62,6 @@ Você verá a tela de login.
 ---
 
 ### Vídeo demonstrativo
+Ao clicar no link, o vídeo será baixado.
 
 [🎥 Assista ao vídeo](https://github.com/victorSilvaGuedes/teste-scot-front-end/raw/main/demo-teste-frontend-scot.mp4)
